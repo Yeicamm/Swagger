@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar contraseña</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://th.bing.com/th/id/R.a155189ba2fe466eddcdef39aabb817e?rik=O3JCPMmZ8D3f%2fA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f03%2fScotiabank_logo_logotype_emblem.png&ehk=N9GeYHfSKOg7E5zwNHUgYjAmowoyl6fTybnwyTLOoSM%3d&risl=&pid=ImgRaw&r=0" alt="Scotiabank" class="rounded mx-auto d-block" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="card-body">
+          <form action="/forgot" method="post">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <div class="card-footer">
+          <a href="/templates/login.html">¿Ya tienes una cuenta?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

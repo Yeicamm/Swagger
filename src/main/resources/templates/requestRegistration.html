@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilo para el botón 3D con área sólida */
+        .boton-3d {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff; /* Color del texto */
+            background-color: #D20000; /* Color de fondo */
+            border-right: 6px solid black; /* Borde del botón */
+            border-left: 3px solid black; /* Borde del botón */
+            border-bottom: 6px solid black; /* Borde del botón */
+            border-top: 3px solid black;
+
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+        .cuadro-gris {
+            background-color: #CCCCCC;
+            border-radius: 20px; /* Bordes redondeados */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card cuadro-gris" style="background-color: #CCCCCC; margin-top: 20px">
+                    <img src="https://th.bing.com/th/id/R.a155189ba2fe466eddcdef39aabb817e?rik=O3JCPMmZ8D3f%2fA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f03%2fScotiabank_logo_logotype_emblem.png&ehk=N9GeYHfSKOg7E5zwNHUgYjAmowoyl6fTybnwyTLOoSM%3d&risl=&pid=ImgRaw&r=0" alt="Scotiabank" class="rounded mx-auto d-block" style="max-width: 100%; height: auto;">
+                    <form action="/api/singup/" method="post">
+                        <div class="form-group" style="text-align: center" >
+                            <label for="firstName" style="-webkit-text-stroke-width: 1px; color: darkred; font-size: 40px">REQUEST REGISTRATION</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName" style="-webkit-text-stroke-width: 1px">First Name</label>
+                            <input type="firstName" class="form-control " id="firstName" name="firstName" style="background-color: #DD6767; border-color: darkred; border-width: 4px" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" style="-webkit-text-stroke-width: 1px">Last Name</label>
+                            <input type="lastName" class="form-control " id="lastName" name="lastName" style="background-color: #DD6767; border-color: darkred; border-width: 4px" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="-webkit-text-stroke-width: 1px">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" style="background-color: #DD6767; border-color: darkred; border-width: 4px"    required >
+                        </div>
+                        <div style="display: flex; align-items: center;">
+                            <div class="form-group">
+                                <label for="requestType" style="-webkit-text-stroke-width: 1px">Request Type</label>
+                                <select class="form-control" id="requestType" name="requestType" style="background-color: white; border-color: darkred; border-width: 4px; height: 1.5cm;" required>
+                                    <option value="general">Request Type</option>
+                                    <option value="support">Customer Support</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-left: 20px;">
+                                <label for="other" style="-webkit-text-stroke-width: 1px">Other</label>
+                                <input type="other" class="form-control" id="other" name="other" style="background-color: #DD6767; border-color: darkred; border-width: 4px;" required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="password" style="-webkit-text-stroke-width: 1px">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password" style="background-color: #DD6767; border-color: darkred; border-width: 4px" required>
+                        </div>
+                        <a href="/templates/login.html">¿Ya tienes una cuenta?</a>
+                        <br>
+                        <button type="submit" class="boton-3d" style="margin-top:40px;text-align: center; margin-left: 50%;-webkit-text-stroke-width: 0.5px"  >Create Account</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
